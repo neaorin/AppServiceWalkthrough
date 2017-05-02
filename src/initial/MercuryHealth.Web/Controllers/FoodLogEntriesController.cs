@@ -88,7 +88,7 @@ namespace MercuryHealth.Web.Controllers
                 Trace.TraceInformation("Created Nutrition {0}", foodLogEntry.Description);
 
                 // Application Insights - Track Events
-                Utilities.TelemetryClientHelper.TrackEvent("Created Nutrition " + foodLogEntry.Description);
+                Utilities.TelemetryClientHelper.TrackEvent("Created Nutrition");
 
                 return RedirectToAction("Index");
             }
@@ -127,7 +127,7 @@ namespace MercuryHealth.Web.Controllers
                 Trace.TraceInformation("Updated Nutrition {0}", foodLogEntry.Description);
 
                 // Application Insights - Track Events
-                Utilities.TelemetryClientHelper.TrackEvent("Updated Nutrition " + foodLogEntry.Description);
+                Utilities.TelemetryClientHelper.TrackEvent("Updated Nutrition");
 
                 return RedirectToAction("Index");
             }
@@ -159,7 +159,7 @@ namespace MercuryHealth.Web.Controllers
             Trace.TraceInformation("Deleted Nutrition {0}", id.ToString());
 
             // Application Insights - Track Events
-            Utilities.TelemetryClientHelper.TrackEvent("Deleted Nutrition " + id.ToString());
+            Utilities.TelemetryClientHelper.TrackEvent("Deleted Nutrition");
 
             return RedirectToAction("Index");
         }
