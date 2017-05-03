@@ -2,7 +2,7 @@
 
 [Back to Index](README.md)
 
-## Deploy the application to Azure
+## Deploy the application to Azure App Service
 
 ### Database deployment
 

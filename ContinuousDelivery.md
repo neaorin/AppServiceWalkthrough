@@ -4,6 +4,16 @@
 
 ## Continuous Delivery
 
+During the [previous section](DeployToAzure.md) we were able to deploy our app quickly and painlessly by using Visual Studio's wizard. However, in the real world, that approach has several drawbacks:
+
+- it's not easily automatable
+- the production version of the app was unavailable while a new version was being deployed
+- we need an easy way to integrate the process into our DevOps workflow
+
+Fortunately, App Service has us covered. We're going to make use of [deployment slots](https://docs.microsoft.com/en-us/azure/app-service-web/web-sites-staged-publishing) and [Git integration for deployment](https://docs.microsoft.com/en-us/azure/app-service-web/web-sites-deploy) to make deployment work seamlessly with our SCM, and keep the app running while we are deploying new versions.
+
+We're also going to make use of [Swap](https://docs.microsoft.com/en-us/azure/app-service-web/web-sites-staged-publishing#swap-deployment-slots) to get new versions into production without taking the app offline.
+
 ### Deploy to Staging
 
 In the [Azure Portal](https://portal.azure.com/), find your App Service and navigate to **Deployment slots**.
