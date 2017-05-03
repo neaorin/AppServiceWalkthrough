@@ -41,4 +41,4 @@ Your user also needs to have the rights to create new databases on the SQL Serve
 
 **Next Step**: [Deploy the application to Microsoft Azure](DeployToAzure.md)
 
-[Back to Index](Readme.md)
+[Back to Index](README.md)

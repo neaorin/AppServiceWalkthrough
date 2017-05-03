@@ -1,6 +1,6 @@
 # Azure App Service Walkthrough
 
-[Back to Index](Readme.md)
+[Back to Index](README.md)
 
 ## Deploy the application to Azure
 
@@ -138,4 +138,4 @@ Now refresh the browser and your app should work fine in Azure!
 
 **Next Step**: [Continuous Delivery](ContinuousDelivery.md)
 
-[Back to Index](Readme.md)
+[Back to Index](README.md)

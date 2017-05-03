@@ -1,6 +1,6 @@
 # Azure App Service Walkthrough
 
-[Back to Index](Readme.md)
+[Back to Index](README.md)
 
 ## Continuous Delivery
 
@@ -213,4 +213,4 @@ Awesome! Now you can get your apps deployed into production automatically and wi
 
 **Next Step**: [Application Instrumentation](AppInstrumentation.md)
 
-[Back to Index](Readme.md)
+[Back to Index](README.md)

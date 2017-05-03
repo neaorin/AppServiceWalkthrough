@@ -1,6 +1,6 @@
 # Azure App Service Walkthrough
 
-[Back to Index](Readme.md)
+[Back to Index](README.md)
 
 ## App instrumentation with Application Insights
 
@@ -207,6 +207,6 @@ For example, here is the default Performance query, with a slightly altered visu
 2. Try [setting up your own Alerts](https://docs.microsoft.com/en-us/azure/application-insights/app-insights-alerts). For example, set an alert for when your average Server Response Time stays above 1 second. Check for the alert email.
 3. Try looking for your [custom events](https://docs.microsoft.com/en-us/azure/application-insights/app-insights-api-custom-events-metrics). For hints, check the `Controllers/FoodLogEntriesController.cs` file. Can you trigger custom events by using the app? Can you write a query in Analytics which will show you how many custom events of each type you had in the past month?
 
-**Next Step**: 
+**Next Step**: [Scaling your application](Scaling.md)
 
-[Back to Index](Readme.md)
+[Back to Index](README.md)
