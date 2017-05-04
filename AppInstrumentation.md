@@ -18,7 +18,9 @@ Non-static method requires a target.
 
 Wouldn't be great to find out about a user encountering that exception just as it happens, and also get as much context about their work up to that point, so we can fix that even before they reach our tech support?
 
-### Enable Application Inisghts
+[Application Insights](https://azure.microsoft.com/en-us/services/application-insights/) to the rescue. 
+
+### Enable Application Insights
 
 In Visual Studio, find the **Quick Launch** bar and search for **Application Insights**. 
 Select `View -> Toolbars -> Application Insights` to add the Application Insights toolbar.
@@ -144,6 +146,11 @@ In the single failure blade, you will be able to see:
 - The full stack trace, with an option to create a work item (bug) in either [Visual Studio Team Services](https://www.visualstudio.com/team-services/) or GitHub.
 - Calls to remote dependencies, like databases or other services.
 - Related telemetry, providing more context about the failure.
+
+> NOTE: The SQL dependency calls do not currently show the actual SQL query text which was run. In order to make the SQL queries show up in dependencies, you need to:
+> - On the Web App slot (staging), navigate to [**Extensions**](https://azure.microsoft.com/en-us/blog/azure-web-sites-extensions/).
+> - Install the following two site extensions: **Application Insights** and **Application Insights Profiler**.
+> - In the **Overview** section, click **Restart** to restart the slot
 
 In the Related Items section, click **All available telemetry for this user session**. 
 
