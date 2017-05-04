@@ -92,6 +92,8 @@ We'll then initialize our own Git repository, and stage the source code for comm
 ```
 git init
 
+git add .gitignore
+
 git add src
 
 git status
@@ -103,7 +105,7 @@ The last command should list a bunch of files to be committed.
 Changes to be committed:
   (use "git rm --cached <file>..." to unstage)
 
-        new file:   src/initial/.gitignore
+        new file:   .gitignore
         new file:   src/initial/MercuryHealth.Models/BmrCalculatorOption.cs
         new file:   src/initial/MercuryHealth.Models/CaloricIntakeCalculator.cs
         new file:   src/initial/MercuryHealth.Models/ClassDiagram.cd
